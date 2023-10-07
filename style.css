@@ -1,0 +1,58 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding: 20px;
+}
+
+body,
+h2 {
+    font-size: 24px;
+}
+
+body>h2>a {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 5px;
+}
+
+body>a::before {
+    content: '🔗';
+    margin-right: 2px;
+    font-size: 12px;
+    opacity: 70%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+ol {
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 960px;
+    list-style-type: none;
+}
+
+ol+h2 {
+    padding-top: 20px;
+}
+
+li+li {
+    padding-top: 10px;
+}
